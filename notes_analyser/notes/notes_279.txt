@@ -1,0 +1,6 @@
+2025-10-06
+My core belief about raw vector search has completely fractured. While semantic search is excellent for finding broad conceptual topics, it's completely blind to discrete structural relationships. It can't reliably map explicit connections like 'Person A recommended Book B while working on Project C.'
+
+Notes: Starting a deep dive into Knowledge Graphs. Learning how to represent information as explicit nodes (Entities) and edges (Relationships). Downloaded NetworkX for Python and started studying Neo4j. The concept of combining semantic vectors with structured topological graphs is incredibly compelling.
+
+Stifling heat today. Tired but focused. Continued working on my learning goals.

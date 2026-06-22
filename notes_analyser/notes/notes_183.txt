@@ -1,0 +1,6 @@
+2025-07-02
+Project 1 is stable and sitting on GitHub. I'm taking a brief breath before diving into Project 2: The Personal Memory AI System. The objective here is fundamentally different. Instead of clean, structured tabular data, I'm dealing with my own messy, unstructured text: journals, code snippets, book notes.
+
+Notes: Started learning foundational Natural Language Processing (NLP). Spent the evening practicing tokenization, stop-word removal, and lemmatization using NLTK. Traditional text processing feels ancient and rule-bound compared to statistical machine learning, but you have to understand the roots.
+
+Stifling heat today. Felt a bit blocked, but clean code saved the day. Continued working on my learning goals.

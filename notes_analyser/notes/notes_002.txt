@@ -1,0 +1,6 @@
+2025-01-02
+Dived into basic data structures today. Cracking open the Python Data Science Handbook. Spent too much time wrestling with list comprehensions vs traditional loops. Loops feel safer, but the comprehensions look incredibly clean once they click.
+
+Notes: Stared at a syntax error for fifteen minutes before realizing I missed a trailing comma in a dictionary definition. Frustrating, but it's forcing me to be meticulous.
+
+Overcast and gloomy. A bit sluggish today, but pushed through. Continued working on my learning goals.

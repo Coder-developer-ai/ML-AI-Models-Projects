@@ -1,0 +1,6 @@
+2025-01-13
+Switched gears to learning Pandas and NumPy. Transitioning from raw Python lists to NumPy arrays requires a complete mind shift. Vectorization makes sense in theory—avoiding explicit loops for speed—but writing the code feels unnatural at first.
+
+Notes: Started skim-reading 'Python Data Science Handbook' to bridge the gap between code and mathematical foundations. The notation is dense, but the concepts around bias-variance tradeoff are sticking. I keep visualizing it as a target where the arrows either group tightly off-center or scatter wildly around the bullseye.
+
+Crisp and clear. Felt a bit blocked, but clean code saved the day. Continued working on my learning goals.

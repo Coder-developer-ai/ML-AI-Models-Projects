@@ -1,0 +1,6 @@
+2025-02-28
+Thinking about feature engineering for Project 1 (the algorithm recommendation system). To recommend an ML algorithm, I need meta-features that describe the dataset itself. Things like the ratio of rows to columns, the degree of class imbalance, and the average skewness of numerical values.
+
+Notes: Spent hours writing functions to extract these meta-features from arbitrary CSV files. The code feels clunky, and I need to refactoring it. I'm keeping track of everything in a giant scratchpad notebook, which is getting dangerously unorganized.
+
+Beautiful sunrise today. Tired but focused. Continued working on my learning goals.

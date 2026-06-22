@@ -1,0 +1,6 @@
+2025-03-30
+Formally laying out the blueprint for Project 1: The Machine Learning Algorithm Recommendation System. The core idea is to feed a dataset's meta-features into a model, which then predicts whether a Random Forest, an SVM, or a Linear Regression will perform best.
+
+Notes: Spent the weekend reading papers on meta-learning. People have done this before, but usually at a highly academic scale. I want something fast and practical that runs via a local command-line interface. My ambition is outstripping my current coding skills, but that's exactly why I'm doing this.
+
+Beautiful sunrise today. Tired but focused. Continued working on my learning goals.

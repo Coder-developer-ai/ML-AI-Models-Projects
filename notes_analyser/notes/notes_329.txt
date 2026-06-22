@@ -1,0 +1,6 @@
+2025-11-25
+Spent days tracking down a memory leak in my graph processing loop. Every time I ran an extraction batch across fifty historical files, my RAM usage skyrocketed until the OS killed the process. It turned out I was inadvertently keeping reference pointers alive inside an unclosed session handler.
+
+Notes: Fixed it, wrapped the pipeline in a clean context manager, and watched the memory consumption line stay perfectly flat. It felt as satisfying as finding a lost key in the dark.
+
+Beautiful sunrise today. Tired but focused. Continued working on my learning goals.

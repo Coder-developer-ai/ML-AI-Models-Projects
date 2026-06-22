@@ -1,0 +1,6 @@
+2025-05-05
+Upgraded Project 1's backend from a single Decision Tree to a Random Forest and an XGBoost model. Hyperparameter spaces are terrifyingly large. Grid search is completely gridlocking my laptop's processor for forty minutes at a time.
+
+Notes: Switched to `RandomizedSearchCV` after reading an article explaining why sampling random points in the hyperparameter space is almost as effective as exhaustive search but fractionally as expensive. It saved me hours. The recommendation engine is starting to make real, coherent predictions on mock datasets.
+
+Beautiful sunrise today. Feeling highly motivated. Continued working on my learning goals.

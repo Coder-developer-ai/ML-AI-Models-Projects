@@ -1,0 +1,6 @@
+2025-08-11
+Watching Andrej Karpathy's 'Zero to Hero' lecture series on neural networks and transformers. The mechanics of backpropagation are beautiful when explained from first principles. I spent hours building a tiny multi-layer perceptron from scratch in raw Python just to watch the loss drop.
+
+Notes: Using pre-trained sentence transformers from Hugging Face to generate vector representations of my actual journal files. The ease of generating a dense 768-dimensional vector from a string of text feels like magic, but I'm forcing myself to understand what's happening under the hood.
+
+Crisp and clear. Felt a bit blocked, but clean code saved the day. Continued working on my learning goals.

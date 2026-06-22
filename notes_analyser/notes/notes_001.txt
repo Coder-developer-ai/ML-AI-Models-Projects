@@ -1,0 +1,6 @@
+2025-01-01
+New Year's Day. Cleaned up my workspace and finally downloaded the latest Python build. It feels a bit cliché to launch into a massive self-directed curriculum today, but I need a hard boundary. I'm committing to tracking two distinct ideas: an algorithm recommendation system to help pick models for datasets, and a personal memory engine that can index everything I read and think.
+
+Notes: Spent two hours messing around with environment paths. VS Code wasn't picking up the virtual environment I created. Fixed it by manually pointing to the interpreter binary. Tomorrow, I start syntax drills.
+
+Crisp and clear. Mind is racing with ideas. Continued working on my learning goals.

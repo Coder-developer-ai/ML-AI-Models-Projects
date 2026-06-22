@@ -1,0 +1,6 @@
+2025-02-14
+Experimenting with feature scaling. Spent three hours wondering why a dummy gradient descent script I wrote wasn't converging. It turned out my features were on completely different magnitudes—one column ranged from 0 to 1, while another went up to 50,000.
+
+Notes: Applied `StandardScaler` to normalize everything to zero mean and unit variance. The convergence curve flattened out beautifully. It's wild how a simple mathematical alignment can make or break an optimization step. Belief strengthening: raw data is an absolute lie until you structure it.
+
+Stifling heat today. Feeling highly motivated. Continued working on my learning goals.

@@ -1,0 +1,6 @@
+2025-04-21
+Wrestling with Scikit-Learn pipelines. Trying to chain data imputation, standard scaling, and a baseline Decision Tree classifier together. Had a massive headache with column transformers when handling mixed text and numerical data.
+
+Notes: The error messages in Python can be incredibly cryptic when nesting objects within pipelines. Spent an hour tracing an attribute error back to a misspelled hyperparameter name in my grid search dictionary. My eyes hurt.
+
+Stifling heat today. Mind is racing with ideas. Continued working on my learning goals.

@@ -1,0 +1,6 @@
+2025-11-04
+Attempting to integrate the vector database and the knowledge graph into a hybrid system known as GraphRAG. The pipeline now queries the vector database for local context, looks up the corresponding nodes in the knowledge graph, traverses their immediate neighbors, and feeds the entire contextual web into the LLM prompt.
+
+Notes: The latency is terrible. A single complex query takes over twelve seconds to evaluate because of multiple lookups and recursive graph parsing. I need to optimize my graph search algorithms and prune irrelevant edges.
+
+Overcast and gloomy. Felt a bit blocked, but clean code saved the day. Continued working on my learning goals.

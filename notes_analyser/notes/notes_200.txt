@@ -1,0 +1,6 @@
+2025-07-19
+Realizing that basic TF-IDF and bag-of-words representations won't cut it for a memory assistant. They track keyword frequencies but completely miss semantic similarity. If I write 'I felt exhausted' on Monday and 'I was tired' on Tuesday, TF-IDF barely links them.
+
+Notes: Began researching word and sentence embeddings. Reading up on how vector spaces can capture contextual definitions. This shifts the whole paradigm. Instead of checking for matching characters, I need to look at spatial proximity in high-dimensional vector spaces.
+
+Overcast and gloomy. Feeling highly motivated. Continued working on my learning goals.

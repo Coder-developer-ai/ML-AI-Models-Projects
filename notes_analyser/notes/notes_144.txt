@@ -1,0 +1,6 @@
+2025-05-24
+Discovered a catastrophic flaw in my evaluation script today. I realized I was applying feature scaling to the entire dataset *before* performing cross-validation split. Data leakage. The training set was secretly inheriting information about the mean and variance of the validation set.
+
+Notes: Fixed the leak by wrapping the scaler strictly inside the cross-validation fold loops using a proper Pipeline object. My validation accuracy dropped from an amazing 89% to a modest 74%. It was a painful blow to my ego, but it's a realistic number. A high accuracy built on data leakage is just a delusion.
+
+Rainy morning. Tired but focused. Continued working on my learning goals.
