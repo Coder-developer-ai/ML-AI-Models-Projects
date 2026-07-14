@@ -1,6 +1,0 @@
-2025-10-31
-Writing an information extraction pipeline. Using an LLM to read through my text chunks, extract key entities (like names, books, specific programming languages), detect their relationships, and compile them into an edge list.
-
-Notes: Entity resolution is proving to be a massive nightmare. The pipeline extracts 'Project 1', 'ML Recommendation System', and 'Recommender Project' as three completely separate entities, when they are obviously the same thing. I need to write a resolution layer that clusters similar entities using a combination of string distance and embedding similarity.
-
-Quiet, freezing night. Tired but focused. Continued working on my learning goals.

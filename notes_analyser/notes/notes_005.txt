@@ -1,6 +1,0 @@
-2025-01-05
-Focused on tuples and sets today. I can feel my typing speed adjusting to Python's structure. The indentation rule used to annoy me, but it actually enforces a clean visual rhythm.
-
-Notes: Had a weird bug where a variable inside a function was shadowing a global variable, causing unexpected behavior down the script. Lesson learned: keep local scopes clean. Drinking way too much black coffee lately.
-
-Beautiful sunrise today. Feeling highly motivated. Continued working on my learning goals.

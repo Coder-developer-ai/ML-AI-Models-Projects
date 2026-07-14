@@ -1,6 +1,0 @@
-2025-06-09
-Spending this week purely on code refactoring. The codebase for Project 1 has grown into an unmanageable monster of custom scripts and random utilities. I'm breaking down large, bloated classes into smaller, single-responsibility functions.
-
-Notes: Evolving opinion: Python code quality is just as critical as the mathematical logic of the model. If you can't read your own preprocessing pipeline after two weeks away from it, your model is essentially a black box built on shifting sand.
-
-Quiet, freezing night. Feeling highly motivated. Continued working on my learning goals.

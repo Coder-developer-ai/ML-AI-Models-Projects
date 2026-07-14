@@ -1,6 +1,0 @@
-2025-01-03
-Focused on understanding *args and **kwargs today. I can feel my typing speed adjusting to Python's structure. The indentation rule used to annoy me, but it actually enforces a clean visual rhythm.
-
-Notes: Had a weird bug where a variable inside a function was shadowing a global variable, causing unexpected behavior down the script. Lesson learned: keep local scopes clean. Drinking way too much black coffee lately.
-
-Stifling heat today. Felt a bit blocked, but clean code saved the day. Continued working on my learning goals.

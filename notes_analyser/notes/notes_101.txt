@@ -1,6 +1,0 @@
-2025-04-11
-Initialized the formal Git repository for Project 1 today. Commit #11. Moving away from messy Jupyter notebooks and writing clean, structured modular files inside a proper directory structure.
-
-Notes: Created `src/loader.py` and `src/features.py`. Writing tests as I go. It feels incredibly slow compared to just hacking things out in a scratchpad, but when I ran the pipeline and it worked without a crash, the sense of stability was worth it.
-
-Beautiful sunrise today. Mind is racing with ideas. Continued working on my learning goals.

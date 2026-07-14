@@ -1,6 +1,0 @@
-2025-12-31
-December 31st. Looking back at the raw text files from exactly twelve months ago, the transformation is staggering. I started the year intimidated by Pandas syntax, and I'm ending it with a deeply integrated personal knowledge web running locally on my hardware.
-
-Notes: Project 1 proved that I could master classical pipelines, data engineering, and robust evaluation. Project 2 showed me how to break past boundaries and work with cutting-edge unstructured architectures. Next year, I'm taking these systems out of my local sandbox and open-sourcing them. The foundations are laid.
-
-Beautiful sunrise today. Feeling highly motivated. Continued working on my learning goals.

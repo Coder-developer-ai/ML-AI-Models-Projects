@@ -1,6 +1,0 @@
-2025-01-17
-Switched gears to learning Pandas and NumPy. Transitioning from raw Python lists to NumPy arrays requires a complete mind shift. Vectorization makes sense in theory—avoiding explicit loops for speed—but writing the code feels unnatural at first.
-
-Notes: Started skim-reading 'Introduction to Statistical Learning (ISLR)' to bridge the gap between code and mathematical foundations. The notation is dense, but the concepts around bias-variance tradeoff are sticking. I keep visualizing it as a target where the arrows either group tightly off-center or scatter wildly around the bullseye.
-
-Beautiful sunrise today. A bit sluggish today, but pushed through. Continued working on my learning goals.

@@ -1,6 +1,0 @@
-2025-01-06
-Focused on string formatting methods today. I can feel my typing speed adjusting to Python's structure. The indentation rule used to annoy me, but it actually enforces a clean visual rhythm.
-
-Notes: Had a weird bug where a variable inside a function was shadowing a global variable, causing unexpected behavior down the script. Lesson learned: keep local scopes clean. Drinking way too much black coffee lately.
-
-Rainy morning. Mind is racing with ideas. Continued working on my learning goals.

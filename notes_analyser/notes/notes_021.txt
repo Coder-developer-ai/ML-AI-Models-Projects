@@ -1,6 +1,0 @@
-2025-01-21
-Working with a sample dataset of housing prices to practice loading, slicing, and cleaning data with Pandas. `.iloc` and `.loc` still confuse me occasionally if I don't stop and think about whether I'm targeting labels or positions.
-
-Notes: Discovered a huge block of missing entries in the dataset. My first instinct was to just drop all rows with missing data, but that threw away nearly 20% of the sample. I need to research better ways to handle this. Imputation sounds elegant but dangerous if it distorts the underlying distribution.
-
-Stifling heat today. Mind is racing with ideas. Continued working on my learning goals.

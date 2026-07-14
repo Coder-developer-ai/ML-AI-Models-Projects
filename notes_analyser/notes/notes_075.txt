@@ -1,6 +1,0 @@
-2025-03-16
-Studying model evaluation metrics. Accuracy is a trap. I built a quick dummy classifier for an imbalanced dataset where 95% of the labels were positive. The model just guessed 'positive' every time and achieved 95% accuracy while being completely useless.
-
-Notes: Leaning heavily into precision, recall, and the F1-score now. Trying to deeply understand the mechanics of the ROC-AUC curve. It's all about the threshold selection. I'm beginning to realize that data science isn't about finding a single 'perfect' number; it's about managing specific trade-offs based on what kind of errors you can tolerate.
-
-Stifling heat today. Feeling highly motivated. Continued working on my learning goals.

@@ -1,6 +1,0 @@
-2025-02-02
-Deep in the weeds with data preprocessing (Day 33). Spent the evening looking at different methods for handling missing numerical values. Tried mean imputation today, but it completely crushed the variance of the feature column.
-
-Notes: Switched to median imputation for columns with skewed distributions, and used a placeholder value for categorical elements. It feels like a series of small, arbitrary design choices, but I know each one alters how a downstream model will interpret the shape of the data.
-
-Stifling heat today. Felt a bit blocked, but clean code saved the day. Continued working on my learning goals.

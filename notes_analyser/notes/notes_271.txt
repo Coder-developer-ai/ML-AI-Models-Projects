@@ -1,6 +1,0 @@
-2025-09-28
-Wrestling with severe hallucination issues in Project 2. If I ask a question about something I never wrote down, the LLM smoothly invents a plausible but entirely fictitious entry based on structural patterns in its training data. It claimed I visited Paris in May because I read an article about European data regulations that month.
-
-Notes: Tightening the system prompt and lowering the model's temperature parameter to near zero. I'm forcing it to strictly output 'I cannot find this information in your provided memories' if the vector search similarity score drops below a specific threshold. Trustworthiness over creativity.
-
-Crisp and clear. Mind is racing with ideas. Continued working on my learning goals.

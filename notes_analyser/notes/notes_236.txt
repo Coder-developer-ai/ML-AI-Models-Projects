@@ -1,6 +1,0 @@
-2025-08-24
-Learning about Vector Databases. Chose ChromaDB for my local infrastructure because it's lightweight and integrates directly into Python. Setting up a localized collection and writing an automated script to parse, embed, and insert my markdown files.
-
-Notes: Hit a wall regarding chunking strategies. If I index a whole 2,000-word diary entry as a single vector, the specific details get washed out in the high-dimensional average. If I chunk it by single sentences, I lose the surrounding context. Settled on a sliding window approach: 200 tokens per chunk with a 50-token overlap.
-
-Overcast and gloomy. Mind is racing with ideas. Continued working on my learning goals.

@@ -1,6 +1,0 @@
-2025-09-06
-Successfully hooked up the local ChromaDB vector repository to an external LLM API to create a Retrieval-Augmented Generation (RAG) system. Today, I queried the system: 'What was I struggling with in February?'
-
-Notes: The system accurately pulled text chunks about feature scaling, parsed them, and summarized my historical frustration with gradient descent. It was surreal reading an AI synthesize my own past thoughts. It feels like an external cognitive backup.
-
-Stifling heat today. Tired but focused. Continued working on my learning goals.
