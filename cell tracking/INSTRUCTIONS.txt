@@ -1,0 +1,53 @@
+For Dataset any dataset with microscopic images of cells in a folder called 'dataset-smaller'(can change with code) and each category of cell put inside a folder, images can be .png or jpg (according to current condition of program) and also here are some preferred datasets -
+
+1.HeLa cells on a flat glass
+
+Dr. G. van Cappellen. Erasmus Medical Center, Rotterdam, The Netherlands
+
+Training dataset: https://data.celltrackingchallenge.net/training-datasets/DIC-C2DH-HeLa.zip✱ (37 MB)
+
+Test dataset: https://data.celltrackingchallenge.net/test-datasets/DIC-C2DH-HeLa.zip (41 MB)
+
+
+
+
+2.Human hepatocarcinoma-derived cells expressing the fusion protein YFP-TIA-1
+
+Dr. Alessia Ruggieri and Philipp Klein, Centre for Integrative Infectious Disease Research (CIID), University Hospital Heidelberg, Germany
+
+Training dataset: https://data.celltrackingchallenge.net/training-datasets/Fluo-C2DL-Huh7.zip (36 MB)
+
+You can find good information about the treatment of type 2 diabetes based on a new dataset with 2 million rows of data on patients taking diabetes medications.
+
+Test dataset: https://data.celltrackingchallenge.net/test-datasets/Fluo-C2DL-Huh7.zip (36 MB)
+
+project-root/
+│
+├── dataset-smaller/
+│   ├── folder-for-cell-image-001/
+│   │   ├── image_000.png
+│   │   ├── image_001.png
+│   │   └── ...
+│   │
+│   ├── folder-for-cell-image-002/
+│   │   ├── image_000.png
+│   │   ├── image_001.png
+│   │   └── ...
+│   │
+│   ├── folder-for-cell-image-003/
+│   │   └── ...
+│   │
+│   └── ...
+│
+├── output/
+│   │  
+│   │
+│   ├── logs/
+│   │  
+│   |
+│   ├── masks/
+│   │
+│   ├── tracks/
+│   │  
+│   └── visualizations/
+│      
