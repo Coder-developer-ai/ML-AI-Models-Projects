@@ -1,0 +1,816 @@
+learning,input,output,task_type,sequential_data,dataset_size,structured_data,real_time_prediction,interpretability_needed,noise_level,accuracy_priority,gpu_available,linear_relationship,num_classes,feature_dimension,model used
+supervised,text,text,generate,yes,large,unstructured,no,no,high,high,yes,no,not_applicable,high,rnn
+supervised,tabular,probability,flag,no,medium,structured,no,no,medium,high,no,no,multi_class,high,xgboost
+supervised,tabular,probability,flag,no,large,structured,no,yes,medium,high,no,no,binary,medium,xgboost
+supervised,tabular,number,predict,no,medium,structured,yes,no,high,high,no,no,not_applicable,medium,random forest
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,medium,medium,no,yes,binary,low,logistic regression
+supervised,image,label,detect,no,medium,unstructured,yes,no,low,high,no,no,binary,medium,svm
+supervised,tabular,number,predict,no,small,structured,yes,no,medium,high,no,no,not_applicable,low,random forest
+supervised,time_series,label,predict,yes,large,structured,yes,no,medium,high,yes,no,multi_class,high,rnn
+supervised,tabular,label,classify,no,medium,structured,yes,yes,high,medium,no,no,multi_class,medium,naive bayes
+semi-supervised,image,mixed,classify,no,medium,unstructured,no,no,high,high,yes,no,multi_class,high,cnn
+self-supervised,video,video,generate,yes,large,unstructured,yes,no,high,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,predict,no,large,structured,no,no,medium,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,large,structured,no,yes,medium,high,no,no,binary,medium,random forest
+supervised,tabular,label,recommend,no,small,structured,no,yes,low,medium,no,no,multi_class,low,knn
+supervised,audio,label,predict,no,large,structured,yes,no,medium,high,yes,no,binary,medium,ann
+supervised,tabular,label,group,no,small,structured,no,yes,low,medium,no,no,binary,low,knn
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,medium,no,unknown,not_applicable,low,linear regression
+self-supervised,video,label,detect,yes,large,unstructured,no,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,large,structured,yes,yes,low,high,yes,no,not_applicable,high,xgboost
+supervised,number,number,predict,no,small,structured,yes,yes,high,high,no,yes,not_applicable,low,linear regression
+supervised,time_series,label,predict,yes,medium,structured,no,no,low,high,yes,no,multi_class,high,rnn
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,medium,no,no,binary,medium,decision tree
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,binary,medium,logistic regression
+supervised,text,text,classify,yes,medium,unstructured,yes,no,medium,high,yes,no,not_applicable,high,rnn
+supervised,tabular,number,predict,no,medium,structured,yes,yes,high,medium,no,no,not_applicable,low,decision tree
+supervised,tabular,number,recommend,no,small,structured,no,yes,low,medium,no,no,not_applicable,medium,knn
+self-supervised,image,label,detect,no,medium,unstructured,no,no,low,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,unknown,binary,high,svm
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,large,structured,no,yes,high,high,no,yes,not_applicable,medium,linear regression
+self-supervised,image,mixed,classify,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,no,no,medium,medium,no,no,binary,medium,random forest
+supervised,tabular,label,flag,no,large,structured,yes,yes,medium,medium,no,no,binary,medium,naive bayes
+supervised,tabular,label,classify,yes,small,structured,no,yes,low,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,small,structured,no,no,high,high,no,yes,binary,medium,svm
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,high,no,no,multi_class,high,random forest
+semi-supervised,number,label,classify,no,medium,structured,yes,yes,medium,high,no,unknown,binary,low,logistic regression
+supervised,tabular,label,classify,yes,large,structured,yes,no,low,high,yes,no,multi_class,low,ann
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,medium,no,unknown,not_applicable,low,linear regression
+semi-supervised,video,label,classify,yes,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,medium,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,large,structured,yes,no,high,medium,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,high,no,yes,not_applicable,high,linear regression
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,medium,no,unknown,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,large,structured,no,no,medium,high,no,no,not_applicable,high,random forest
+supervised,tabular,number,predict,no,large,structured,yes,no,medium,medium,no,no,not_applicable,high,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,unknown,binary,high,logistic regression
+supervised,tabular,probability,classify,no,small,structured,yes,yes,low,medium,no,yes,binary,low,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,no,high,high,yes,no,not_applicable,high,random forest
+supervised,text,label,classify,no,medium,unstructured,yes,yes,high,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,label,group,no,medium,structured,yes,no,low,medium,no,no,binary,medium,knn
+supervised,tabular,label,classify,no,medium,structured,yes,no,high,high,no,no,multi_class,high,random forest
+supervised,tabular,number,generate,no,large,unstructured,no,no,high,high,no,no,not_applicable,high,ann
+supervised,tabular,number,classify,no,large,semi_structured,no,no,medium,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,binary,high,random forest
+reinforcements,mixed,number,recommend,yes,medium,structured,no,no,high,high,no,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,unknown,multi_class,medium,decision tree
+self-supervised,image,probability,classify,no,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,small,structured,no,yes,high,medium,no,yes,not_applicable,high,linear regression
+supervised,tabular,number,predict,no,medium,unstructured,yes,no,medium,high,no,no,not_applicable,medium,ann
+supervised,time_series,number,predict,yes,large,structured,yes,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,medium,no,no,multi_class,low,decision tree
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,no,no,multi_class,high,random forest
+supervised,tabular,label,classify,no,medium,structured,no,no,low,high,no,unknown,multi_class,high,svm
+supervised,tabular,label,classify,no,medium,structured,no,no,low,medium,no,no,multi_class,high,random forest
+supervised,number,label,classify,no,medium,structured,yes,yes,medium,high,no,unknown,multi_class,medium,logistic regression
+reinforcements,audio,number,recommend,no,small,unstructured,yes,no,low,high,no,no,not_applicable,medium,ann
+supervised,time_series,text,forecast,yes,large,structured,no,no,low,high,yes,no,not_applicable,medium,rnn
+semi-supervised,image,label,detect,no,large,unstructured,no,no,medium,high,yes,no,binary,high,cnn
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,no,binary,high,naive bayes
+supervised,tabular,label,classify,no,medium,structured,yes,no,low,medium,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,medium,structured,yes,no,medium,high,no,no,not_applicable,high,xgboost
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,forecast,yes,small,structured,yes,yes,low,medium,no,unknown,not_applicable,medium,linear regression
+supervised,tabular,number,predict,no,medium,semi_structured,no,yes,medium,high,yes,no,not_applicable,medium,random forest
+supervised,audio,label,classify,no,small,unstructured,no,no,medium,high,yes,no,binary,medium,ann
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,high,no,no,multi_class,low,random forest
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,high,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,no,no,binary,high,svm
+semi-supervised,number,label,generate,no,large,structured,no,no,high,high,yes,no,binary,medium,ann
+semi-supervised,tabular,tabular,predict,no,small,structured,no,yes,medium,medium,no,unknown,not_applicable,low,linear regression
+supervised,tabular,label,predict,no,large,semi_structured,no,no,medium,high,no,no,multi_class,medium,ann
+supervised,number,number,predict,no,large,structured,yes,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,text,label,generate,yes,medium,unstructured,yes,no,medium,high,yes,no,binary,high,rnn
+supervised,tabular,number,predict,no,small,structured,no,no,high,high,no,no,not_applicable,high,random forest
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,binary,medium,svm
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,high,no,no,not_applicable,high,xgboost
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,high,no,yes,binary,medium,logistic regression
+supervised,number,label,classify,no,medium,structured,yes,yes,medium,medium,no,yes,binary,low,logistic regression
+supervised,text,text,translate,yes,large,unstructured,yes,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,number,predict,no,small,structured,no,yes,low,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,probability,flag,no,medium,structured,no,no,high,high,no,no,multi_class,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,high,high,yes,no,multi_class,medium,xgboost
+supervised,image,image,classify,no,large,unstructured,yes,no,medium,high,yes,no,not_applicable,high,cnn
+reinforcements,mixed,number,recommend,no,medium,unstructured,yes,no,medium,high,no,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,yes,multi_class,high,svm
+supervised,number,number,predict,no,medium,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,text,label,classify,no,small,unstructured,yes,yes,medium,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,label,classify,no,small,structured,no,no,low,medium,no,no,multi_class,low,knn
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,high,no,no,not_applicable,low,random forest
+supervised,tabular,label,classify,no,large,structured,no,yes,medium,medium,no,no,multi_class,high,random forest
+supervised,text,label,translate,yes,medium,unstructured,no,no,high,high,yes,no,binary,medium,rnn
+semi-supervised,tabular,number,classify,no,large,structured,no,no,high,high,no,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,no,binary,low,decision tree
+supervised,text,audio,classify,yes,large,unstructured,no,no,low,high,yes,no,not_applicable,high,rnn
+supervised,tabular,number,forecast,yes,medium,structured,yes,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,time_series,time_series,forecast,yes,large,structured,yes,no,low,high,yes,no,not_applicable,high,rnn
+supervised,tabular,label,classify,no,large,structured,yes,no,high,high,no,no,multi_class,high,ann
+supervised,image,label,classify,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,probability,flag,no,medium,structured,no,yes,medium,high,no,yes,multi_class,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,probability,flag,no,medium,structured,yes,yes,low,medium,no,yes,binary,medium,logistic regression
+supervised,time_series,label,forecast,yes,large,structured,yes,no,low,high,yes,no,multi_class,medium,rnn
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,high,no,yes,not_applicable,medium,linear regression
+supervised,text,label,classify,no,medium,unstructured,yes,no,medium,high,no,no,binary,medium,svm
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,medium,no,yes,binary,low,logistic regression
+supervised,text,label,classify,no,large,unstructured,no,no,medium,high,no,yes,multi_class,high,svm
+supervised,tabular,label,classify,no,small,structured,no,no,low,medium,no,no,binary,medium,knn
+supervised,tabular,label,recommend,no,medium,structured,no,yes,low,medium,no,no,binary,low,knn
+supervised,tabular,number,predict,no,large,structured,no,no,low,high,yes,no,not_applicable,medium,random forest
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,binary,medium,random forest
+supervised,tabular,label,flag,no,small,structured,yes,yes,medium,high,no,yes,multi_class,low,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,no,high,high,no,no,not_applicable,high,random forest
+supervised,tabular,number,predict,no,large,structured,no,no,medium,high,no,no,not_applicable,low,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,high,yes,no,binary,medium,random forest
+supervised,text,label,generate,yes,large,unstructured,yes,no,low,high,yes,no,multi_class,high,rnn
+supervised,tabular,label,recommend,no,small,structured,no,yes,medium,medium,no,no,binary,medium,knn
+supervised,tabular,probability,flag,no,large,structured,yes,no,medium,high,no,no,multi_class,medium,random forest
+supervised,text,time_series,generate,yes,large,unstructured,no,no,low,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,label,predict,no,large,structured,no,no,medium,high,yes,no,binary,medium,ann
+supervised,audio,video,transcribe,yes,large,unstructured,no,no,medium,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,medium,no,no,not_applicable,low,decision tree
+supervised,tabular,label,predict,no,large,structured,yes,no,high,high,yes,no,multi_class,medium,ann
+unsupervised,tabular,label,group,no,large,structured,yes,no,medium,high,no,no,multi_class,medium,ann
+reinforcements,audio,number,recommend,no,large,unstructured,no,no,medium,high,no,no,not_applicable,medium,ann
+supervised,tabular,label,recommend,no,small,structured,yes,no,low,medium,no,no,binary,high,knn
+supervised,tabular,label,classify,no,small,structured,yes,no,low,high,no,yes,multi_class,high,svm
+supervised,tabular,number,predict,no,small,structured,yes,yes,low,high,no,yes,not_applicable,low,linear regression
+supervised,number,probability,classify,no,medium,structured,no,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,no,multi_class,low,decision tree
+unsupervised,label,tabular,group,no,small,semi_structured,no,yes,medium,medium,no,unknown,multi_class,medium,ann
+supervised,tabular,label,classify,no,small,structured,no,no,low,medium,no,no,binary,low,knn
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,unknown,binary,medium,decision tree
+supervised,tabular,number,forecast,yes,medium,structured,yes,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,medium,structured,no,no,high,medium,no,no,not_applicable,high,random forest
+supervised,tabular,number,predict,no,small,structured,no,yes,low,medium,no,no,not_applicable,low,decision tree
+supervised,text,label,classify,no,small,unstructured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,probability,classify,no,medium,structured,no,yes,medium,high,no,yes,multi_class,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,unknown,binary,medium,decision tree
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,high,high,no,yes,binary,low,logistic regression
+supervised,tabular,number,predict,no,small,structured,no,yes,low,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,no,no,low,high,no,no,multi_class,high,svm
+semi-supervised,mixed,label,classify,no,small,structured,yes,no,medium,high,no,no,multi_class,high,ann
+supervised,tabular,number,predict,no,medium,structured,yes,no,low,high,no,no,not_applicable,medium,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,large,structured,yes,no,low,high,no,no,multi_class,high,xgboost
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,high,no,no,not_applicable,medium,random forest
+supervised,tabular,label,classify,no,large,structured,yes,yes,high,high,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,text,label,classify,no,medium,unstructured,no,no,medium,high,no,yes,binary,high,svm
+supervised,number,number,predict,no,large,structured,yes,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,yes,no,low,high,no,no,multi_class,medium,svm
+supervised,number,number,predict,no,small,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,small,structured,no,yes,low,medium,no,yes,not_applicable,low,linear regression
+semi-supervised,tabular,number,predict,no,small,structured,no,yes,medium,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,no,binary,high,naive bayes
+supervised,audio,mixed,transcribe,yes,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,image,image,classify,no,large,unstructured,no,no,medium,high,yes,no,not_applicable,high,cnn
+supervised,text,label,classify,no,medium,unstructured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,number,forecast,yes,small,structured,no,yes,high,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,predict,no,medium,structured,no,no,medium,medium,no,no,multi_class,medium,knn
+supervised,tabular,number,predict,no,small,structured,yes,yes,high,medium,no,no,not_applicable,low,knn
+supervised,tabular,number,predict,no,large,structured,no,no,medium,high,no,no,not_applicable,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,yes,no,low,high,no,yes,multi_class,high,svm
+supervised,tabular,label,classify,no,medium,structured,yes,yes,high,medium,no,no,binary,medium,naive bayes
+supervised,text,label,classify,no,medium,unstructured,no,no,medium,high,no,no,binary,high,svm
+supervised,tabular,label,classify,yes,medium,structured,no,yes,medium,medium,no,yes,binary,low,logistic regression
+supervised,text,label,translate,yes,large,unstructured,yes,no,high,high,yes,no,binary,high,rnn
+supervised,tabular,number,predict,no,medium,structured,no,no,medium,high,no,no,not_applicable,high,xgboost
+self-supervised,image,label,detect,no,large,unstructured,no,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,medium,structured,yes,yes,low,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,number,predict,no,large,structured,no,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,yes,no,binary,low,xgboost
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,high,no,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,no,high,high,no,no,multi_class,high,svm
+supervised,image,label,detect,no,large,unstructured,yes,no,low,high,yes,no,multi_class,high,cnn
+supervised,mixed,label,classify,no,medium,structured,no,yes,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,small,structured,yes,yes,low,medium,no,no,not_applicable,high,decision tree
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,label,flag,yes,medium,structured,yes,yes,low,medium,no,unknown,binary,medium,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,no,multi_class,high,decision tree
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,binary,high,random forest
+semi-supervised,tabular,label,classify,no,large,structured,yes,no,low,high,no,no,multi_class,high,ann
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,binary,high,ann
+supervised,time_series,number,forecast,yes,large,structured,no,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,number,predict,no,medium,structured,no,no,medium,high,no,yes,not_applicable,high,svm
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,high,no,no,not_applicable,medium,random forest
+supervised,tabular,label,classify,no,large,structured,yes,no,high,high,no,no,binary,medium,xgboost
+supervised,mixed,label,classify,no,medium,structured,yes,no,low,high,no,no,binary,medium,random forest
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,multi_class,low,decision tree
+supervised,image,label,classify,no,large,unstructured,no,no,medium,high,yes,no,binary,high,cnn
+supervised,text,probability,classify,no,medium,unstructured,yes,yes,medium,medium,no,no,binary,high,naive bayes
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,high,no,unknown,binary,medium,logistic regression
+supervised,mixed,label,classify,no,large,semi_structured,yes,no,medium,high,no,no,multi_class,medium,ann
+supervised,image,label,detect,no,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,text,label,classify,no,medium,unstructured,yes,yes,low,medium,no,no,binary,high,naive bayes
+semi-supervised,audio,mixed,transcribe,yes,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,no,no,medium,medium,no,no,multi_class,high,random forest
+supervised,tabular,tabular,forecast,yes,small,structured,yes,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,text,label,classify,no,medium,unstructured,no,no,low,high,no,no,binary,medium,svm
+supervised,tabular,label,classify,no,small,structured,yes,no,low,medium,no,no,multi_class,medium,knn
+supervised,text,label,classify,no,medium,unstructured,no,no,low,high,no,no,binary,low,svm
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,binary,medium,svm
+supervised,tabular,number,forecast,yes,small,structured,yes,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,yes,no,binary,high,xgboost
+supervised,tabular,label,transcribe,no,large,structured,yes,no,high,high,yes,no,binary,high,cnn
+supervised,mixed,number,predict,yes,large,structured,yes,no,high,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,binary,high,decision tree
+supervised,tabular,label,predict,no,large,structured,yes,no,medium,high,yes,no,multi_class,high,ann
+supervised,time_series,time_series,forecast,yes,large,structured,yes,no,medium,high,yes,no,not_applicable,high,rnn
+supervised,tabular,number,predict,no,large,structured,no,yes,low,high,no,unknown,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,low,high,no,no,binary,high,svm
+supervised,text,label,classify,yes,large,unstructured,no,no,low,high,yes,no,multi_class,high,rnn
+supervised,tabular,number,predict,no,large,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,text,label,classify,no,medium,unstructured,yes,yes,medium,medium,no,no,binary,high,naive bayes
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,multi_class,high,random forest
+supervised,number,label,classify,no,large,unstructured,yes,no,medium,high,yes,no,binary,medium,ann
+supervised,mixed,number,classify,no,medium,structured,yes,no,low,high,yes,no,not_applicable,high,ann
+supervised,tabular,number,classify,no,small,structured,no,no,medium,medium,no,no,not_applicable,low,knn
+supervised,tabular,probability,classify,no,medium,structured,no,yes,low,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,no,binary,low,decision tree
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,high,no,yes,not_applicable,medium,linear regression
+reinforcements,audio,number,recommend,no,large,semi_structured,yes,no,medium,high,yes,no,not_applicable,high,ann
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,no,binary,medium,decision tree
+self-supervised,video,label,detect,yes,medium,unstructured,no,no,medium,high,yes,no,binary,medium,rnn
+supervised,tabular,label,flag,no,large,structured,yes,no,low,high,no,no,binary,high,xgboost
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,image,video,classify,no,large,unstructured,yes,no,high,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,flag,no,medium,structured,yes,yes,low,high,no,yes,binary,medium,logistic regression
+supervised,number,label,classify,no,medium,unstructured,no,no,medium,high,yes,no,multi_class,high,ann
+self-supervised,audio,image,transcribe,yes,large,unstructured,yes,no,low,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,predict,no,large,structured,yes,yes,high,high,no,yes,not_applicable,medium,linear regression
+semi-supervised,image,label,classify,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,high,no,no,not_applicable,high,random forest
+supervised,tabular,probability,flag,no,large,structured,yes,no,medium,high,no,no,multi_class,medium,xgboost
+supervised,tabular,probability,flag,no,large,structured,no,no,medium,high,yes,no,binary,high,xgboost
+supervised,tabular,probability,classify,no,small,structured,no,yes,low,medium,no,yes,binary,low,logistic regression
+supervised,tabular,tabular,predict,no,medium,structured,no,yes,medium,medium,no,yes,not_applicable,medium,linear regression
+supervised,text,text,translate,yes,large,unstructured,no,no,high,high,yes,no,not_applicable,high,rnn
+supervised,text,label,classify,no,large,unstructured,yes,yes,medium,medium,no,no,binary,high,naive bayes
+supervised,tabular,number,predict,no,medium,structured,yes,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,audio,label,classify,no,large,structured,yes,no,low,high,yes,no,multi_class,medium,ann
+supervised,tabular,label,flag,no,large,structured,no,no,high,high,no,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,image,mixed,detect,no,large,unstructured,yes,no,low,high,yes,no,binary,high,cnn
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,no,binary,low,knn
+supervised,tabular,number,predict,no,small,structured,no,yes,high,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,binary,medium,xgboost
+supervised,number,label,classify,no,medium,structured,yes,yes,medium,high,no,unknown,binary,medium,logistic regression
+supervised,tabular,probability,flag,no,large,structured,yes,no,medium,high,yes,no,multi_class,medium,random forest
+supervised,tabular,label,flag,no,large,structured,no,yes,low,medium,no,yes,binary,low,logistic regression
+supervised,text,label,classify,no,medium,unstructured,yes,yes,low,medium,no,no,multi_class,high,naive bayes
+supervised,image,label,detect,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,cnn
+semi-supervised,tabular,probability,classify,no,small,structured,no,yes,medium,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,label,group,no,small,structured,no,no,low,medium,no,no,multi_class,medium,knn
+supervised,audio,number,transcribe,yes,large,unstructured,yes,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,number,generate,no,large,semi_structured,yes,no,medium,high,yes,no,not_applicable,high,ann
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,medium,no,unknown,not_applicable,low,decision tree
+supervised,tabular,label,classify,no,large,structured,no,yes,high,high,no,no,multi_class,low,random forest
+supervised,image,image,detect,no,large,unstructured,yes,no,low,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,medium,high,no,no,not_applicable,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,high,high,no,no,binary,low,random forest
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,yes,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,no,binary,high,knn
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,low,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,medium,structured,no,yes,high,medium,no,no,not_applicable,high,decision tree
+supervised,tabular,number,predict,no,large,structured,no,no,high,high,no,no,not_applicable,high,svm
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,number,label,classify,no,large,structured,yes,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,no,multi_class,low,knn
+supervised,image,label,generate,no,large,unstructured,no,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,no,yes,low,high,no,no,multi_class,medium,xgboost
+supervised,text,label,classify,no,large,unstructured,yes,yes,high,medium,no,no,binary,high,naive bayes
+supervised,number,probability,classify,no,small,structured,no,yes,high,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,binary,low,logistic regression
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,no,no,binary,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,unknown,binary,medium,logistic regression
+supervised,tabular,probability,predict,no,large,structured,yes,no,high,high,yes,no,binary,high,ann
+supervised,audio,label,transcribe,yes,large,unstructured,no,no,low,high,yes,no,binary,high,cnn
+supervised,time_series,text,forecast,yes,large,structured,yes,no,medium,high,yes,no,not_applicable,high,rnn
+supervised,tabular,probability,classify,no,large,structured,yes,yes,low,high,no,yes,binary,low,logistic regression
+supervised,text,label,flag,no,small,unstructured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,probability,classify,no,large,structured,no,yes,high,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,flag,no,medium,structured,yes,no,medium,high,no,no,multi_class,medium,xgboost
+supervised,tabular,number,forecast,yes,large,structured,yes,no,low,high,no,no,not_applicable,high,xgboost
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,low,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,large,structured,yes,yes,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,high,no,unknown,binary,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,no,no,high,high,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,small,structured,yes,no,low,high,no,no,multi_class,medium,random forest
+supervised,time_series,number,forecast,yes,large,structured,yes,no,high,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,probability,flag,no,medium,structured,no,no,medium,high,no,no,binary,high,random forest
+supervised,tabular,label,classify,no,large,structured,yes,no,low,high,no,no,multi_class,high,svm
+supervised,tabular,label,flag,no,medium,structured,yes,yes,low,medium,no,yes,multi_class,low,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,multi_class,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,no,no,high,medium,no,no,binary,low,knn
+supervised,tabular,number,forecast,yes,small,structured,no,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,probability,flag,no,large,structured,yes,no,high,high,no,no,binary,high,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,no,multi_class,low,decision tree
+supervised,image,label,detect,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,image,mixed,classify,no,large,unstructured,no,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,large,structured,yes,no,medium,high,no,no,not_applicable,medium,random forest
+supervised,tabular,label,flag,no,medium,structured,no,no,high,high,yes,no,binary,high,xgboost
+supervised,text,label,classify,no,medium,unstructured,yes,yes,high,medium,no,no,binary,high,naive bayes
+supervised,tabular,number,predict,no,small,structured,yes,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,flag,no,medium,structured,yes,yes,high,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,label,classify,no,small,structured,no,no,low,high,no,no,multi_class,high,svm
+supervised,tabular,image,transcribe,no,large,structured,yes,no,medium,high,yes,no,not_applicable,high,cnn
+supervised,text,label,classify,no,medium,unstructured,no,no,low,high,no,no,binary,high,svm
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,high,no,yes,not_applicable,medium,linear regression
+supervised,text,label,classify,no,large,unstructured,no,no,medium,high,no,no,multi_class,high,svm
+supervised,tabular,label,classify,no,medium,structured,no,no,high,high,no,no,binary,medium,random forest
+supervised,audio,number,predict,no,large,structured,no,no,high,high,no,no,not_applicable,high,ann
+supervised,number,number,forecast,yes,small,structured,no,yes,low,medium,yes,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,no,no,medium,high,no,no,binary,high,svm
+supervised,audio,number,transcribe,yes,medium,unstructured,yes,no,low,high,yes,no,not_applicable,high,rnn
+supervised,tabular,number,predict,no,small,structured,no,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,audio,text,transcribe,yes,large,unstructured,no,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,text,label,flag,no,small,unstructured,yes,yes,high,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,probability,classify,no,small,structured,yes,yes,low,high,no,yes,binary,low,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,medium,no,no,not_applicable,medium,decision tree
+self-supervised,image,label,detect,no,medium,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,probability,classify,no,medium,structured,no,yes,high,medium,no,unknown,binary,medium,logistic regression
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,binary,medium,logistic regression
+supervised,text,text,classify,yes,large,unstructured,no,no,high,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,label,predict,no,small,structured,no,yes,high,medium,no,no,binary,low,knn
+semi-supervised,image,label,detect,no,medium,unstructured,no,no,low,high,yes,no,multi_class,high,cnn
+unsupervised,audio,label,group,no,medium,structured,yes,no,medium,high,yes,no,binary,medium,ann
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,unknown,binary,medium,decision tree
+supervised,tabular,number,forecast,yes,large,structured,yes,yes,high,medium,no,yes,not_applicable,high,linear regression
+self-supervised,time_series,time_series,forecast,yes,large,structured,no,no,medium,high,yes,no,not_applicable,high,rnn
+semi-supervised,audio,number,predict,yes,medium,structured,yes,no,high,high,yes,no,not_applicable,medium,ann
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,medium,high,no,unknown,not_applicable,low,linear regression
+supervised,image,label,detect,no,medium,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,high,high,no,yes,binary,medium,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,audio,label,classify,yes,large,unstructured,yes,no,low,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,high,no,yes,multi_class,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,high,medium,no,no,binary,high,random forest
+supervised,image,label,detect,no,large,unstructured,no,no,low,high,yes,no,binary,high,cnn
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,unknown,binary,low,logistic regression
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,large,semi_structured,no,no,medium,high,no,no,binary,medium,ann
+supervised,tabular,number,predict,no,large,structured,no,no,high,high,yes,no,not_applicable,low,xgboost
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,no,multi_class,high,decision tree
+supervised,number,label,classify,no,small,structured,yes,yes,low,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,large,structured,no,no,low,high,no,yes,binary,high,svm
+supervised,tabular,number,predict,no,large,structured,no,yes,low,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,number,predict,no,small,structured,yes,no,low,high,no,no,not_applicable,medium,svm
+supervised,video,image,classify,yes,large,unstructured,no,no,medium,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,medium,no,no,binary,low,decision tree
+supervised,mixed,label,generate,no,large,structured,no,no,high,high,no,no,binary,high,ann
+supervised,tabular,probability,flag,no,large,structured,yes,no,low,high,no,no,binary,high,xgboost
+supervised,text,label,classify,no,medium,unstructured,yes,yes,low,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,number,classify,yes,large,structured,yes,no,low,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,large,semi_structured,yes,no,medium,high,no,no,multi_class,medium,ann
+supervised,number,label,classify,no,medium,structured,no,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,tabular,number,classify,no,small,structured,no,yes,medium,medium,no,no,not_applicable,low,knn
+supervised,image,image,classify,no,large,unstructured,yes,no,high,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,classify,no,medium,structured,no,no,low,high,yes,no,binary,high,xgboost
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,no,multi_class,low,knn
+supervised,tabular,number,predict,no,small,structured,yes,yes,low,medium,no,no,not_applicable,low,decision tree
+supervised,image,label,generate,no,large,unstructured,no,no,medium,high,yes,no,binary,high,cnn
+supervised,tabular,label,flag,no,small,structured,yes,yes,medium,medium,no,no,binary,high,naive bayes
+self-supervised,image,image,classify,no,large,unstructured,no,no,low,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,flag,no,medium,structured,yes,yes,high,high,no,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,yes,no,multi_class,medium,xgboost
+supervised,tabular,number,predict,no,small,structured,yes,yes,low,medium,no,no,not_applicable,medium,decision tree
+reinforcements,tabular,number,recommend,yes,large,unstructured,yes,no,low,high,yes,no,not_applicable,medium,ann
+supervised,image,label,detect,no,medium,unstructured,yes,no,low,high,no,no,multi_class,low,svm
+supervised,tabular,label,transcribe,no,medium,structured,yes,no,low,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,medium,structured,no,no,low,high,no,no,not_applicable,low,random forest
+supervised,number,label,predict,no,large,structured,yes,no,medium,high,yes,no,multi_class,high,ann
+supervised,number,label,classify,no,small,structured,no,yes,low,high,no,yes,multi_class,low,logistic regression
+supervised,tabular,label,flag,no,medium,structured,no,yes,high,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,large,structured,no,no,low,high,yes,no,binary,medium,xgboost
+supervised,mixed,probability,recommend,yes,large,structured,no,no,high,high,no,no,binary,medium,ann
+supervised,tabular,label,classify,no,large,structured,yes,yes,low,high,no,yes,multi_class,low,logistic regression
+self-supervised,time_series,label,forecast,yes,large,structured,no,no,high,high,yes,no,multi_class,high,rnn
+supervised,time_series,text,forecast,yes,large,structured,yes,no,high,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,number,predict,no,small,structured,no,no,medium,high,no,no,not_applicable,medium,random forest
+supervised,text,label,classify,no,medium,unstructured,yes,no,medium,high,no,no,multi_class,high,svm
+supervised,tabular,mixed,classify,no,large,semi_structured,no,no,high,high,yes,no,multi_class,high,ann
+supervised,tabular,number,forecast,yes,medium,structured,yes,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,mixed,mixed,classify,yes,large,structured,yes,no,low,high,yes,no,multi_class,medium,ann
+supervised,text,label,flag,no,small,unstructured,yes,yes,low,medium,no,no,multi_class,high,naive bayes
+supervised,time_series,label,forecast,yes,large,structured,yes,no,high,high,yes,no,multi_class,high,rnn
+unsupervised,tabular,label,group,no,large,structured,no,no,high,high,yes,no,multi_class,medium,ann
+supervised,tabular,probability,flag,no,large,structured,no,no,medium,high,no,no,binary,high,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,no,binary,low,knn
+supervised,tabular,label,classify,no,medium,structured,no,no,low,high,no,no,binary,high,svm
+supervised,tabular,label,classify,no,small,structured,no,no,low,high,no,yes,multi_class,medium,svm
+supervised,tabular,label,classify,no,small,structured,no,no,high,high,no,unknown,binary,high,svm
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,binary,medium,xgboost
+supervised,time_series,text,forecast,yes,large,structured,no,no,low,high,yes,no,not_applicable,high,rnn
+semi-supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,recommend,no,large,structured,no,no,medium,high,yes,no,multi_class,medium,ann
+supervised,text,number,predict,no,medium,unstructured,no,no,high,high,no,no,not_applicable,high,svm
+supervised,text,label,flag,no,medium,unstructured,yes,yes,low,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,high,no,no,binary,medium,random forest
+supervised,tabular,label,flag,no,medium,structured,no,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,number,label,classify,no,medium,structured,yes,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,image,image,detect,no,large,unstructured,yes,no,medium,high,yes,no,not_applicable,high,cnn
+supervised,number,label,classify,no,large,structured,yes,no,medium,high,yes,no,multi_class,high,ann
+supervised,tabular,label,classify,no,medium,structured,yes,no,low,high,no,no,binary,medium,random forest
+supervised,number,number,predict,no,small,structured,no,yes,medium,medium,no,unknown,not_applicable,low,linear regression
+supervised,tabular,number,forecast,yes,small,structured,no,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,small,structured,no,yes,low,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,number,predict,no,medium,structured,yes,yes,low,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,probability,classify,no,small,structured,yes,yes,medium,medium,no,yes,binary,low,logistic regression
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+reinforcements,tabular,number,recommend,no,large,unstructured,no,no,medium,high,yes,no,not_applicable,high,ann
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,no,binary,medium,decision tree
+supervised,tabular,label,classify,no,medium,structured,yes,yes,high,medium,no,yes,binary,medium,logistic regression
+unsupervised,mixed,label,group,no,medium,unstructured,no,no,medium,high,yes,no,binary,high,ann
+supervised,tabular,probability,flag,no,large,structured,no,no,medium,high,no,no,multi_class,low,random forest
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,unknown,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,high,no,no,multi_class,medium,svm
+supervised,tabular,label,classify,no,small,structured,no,no,medium,high,no,no,binary,low,random forest
+supervised,time_series,label,forecast,yes,large,structured,no,no,high,high,yes,no,multi_class,medium,rnn
+supervised,mixed,label,classify,no,medium,structured,yes,no,high,medium,yes,no,multi_class,high,random forest
+supervised,tabular,number,predict,no,medium,structured,no,no,medium,high,no,no,not_applicable,medium,random forest
+supervised,tabular,number,predict,no,medium,structured,yes,yes,low,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,high,no,no,multi_class,high,svm
+supervised,text,label,classify,no,medium,unstructured,no,no,low,high,no,yes,multi_class,medium,svm
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,no,no,multi_class,high,random forest
+supervised,tabular,probability,flag,no,medium,structured,yes,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,multi_class,medium,decision tree
+supervised,tabular,label,predict,no,small,structured,no,yes,low,medium,no,no,multi_class,low,knn
+supervised,tabular,label,classify,no,small,structured,no,no,medium,high,no,no,binary,medium,random forest
+supervised,image,label,detect,no,small,unstructured,yes,no,medium,high,no,no,multi_class,medium,svm
+supervised,number,probability,classify,no,small,structured,yes,yes,low,high,no,yes,binary,high,logistic regression
+supervised,tabular,probability,classify,no,small,structured,yes,yes,high,medium,no,unknown,binary,medium,logistic regression
+supervised,mixed,label,recommend,no,large,structured,yes,no,high,high,yes,no,binary,high,ann
+supervised,image,mixed,classify,no,medium,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,medium,structured,no,no,medium,high,no,no,not_applicable,high,random forest
+supervised,text,label,classify,no,medium,unstructured,yes,yes,high,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,yes,binary,medium,logistic regression
+self-supervised,audio,video,transcribe,yes,large,unstructured,no,no,high,high,yes,no,not_applicable,high,cnn
+supervised,image,probability,classify,no,medium,unstructured,yes,no,low,high,yes,no,binary,high,cnn
+supervised,tabular,probability,classify,no,small,structured,no,yes,medium,medium,no,unknown,binary,high,logistic regression
+supervised,time_series,label,predict,yes,large,structured,yes,no,low,high,yes,no,multi_class,high,rnn
+supervised,tabular,probability,flag,no,small,structured,no,yes,high,high,no,yes,binary,medium,logistic regression
+supervised,number,label,classify,no,medium,structured,yes,yes,low,high,no,unknown,multi_class,medium,logistic regression
+supervised,audio,label,transcribe,yes,medium,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,yes,yes,medium,high,no,unknown,binary,high,logistic regression
+supervised,image,image,classify,no,large,unstructured,no,no,high,high,yes,no,not_applicable,high,cnn
+supervised,number,number,predict,no,small,structured,no,yes,low,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,classify,no,large,structured,no,no,medium,medium,no,no,not_applicable,medium,knn
+supervised,text,label,translate,yes,large,unstructured,yes,no,medium,high,yes,no,multi_class,medium,rnn
+supervised,tabular,number,predict,no,medium,structured,no,yes,high,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,medium,structured,no,no,high,high,no,no,not_applicable,medium,random forest
+supervised,tabular,label,classify,no,large,structured,yes,no,low,medium,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,medium,structured,no,no,high,high,yes,no,multi_class,high,random forest
+supervised,image,label,detect,no,large,unstructured,no,no,high,high,yes,no,binary,high,cnn
+supervised,tabular,label,predict,no,medium,structured,yes,no,medium,high,yes,no,multi_class,high,ann
+supervised,tabular,probability,classify,no,medium,structured,no,yes,high,high,no,yes,binary,medium,logistic regression
+supervised,time_series,audio,forecast,yes,large,structured,no,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,tabular,mixed,recommend,no,medium,structured,yes,no,medium,high,yes,no,multi_class,high,ann
+supervised,audio,label,predict,yes,large,semi_structured,no,no,medium,high,yes,no,multi_class,low,ann
+supervised,tabular,number,forecast,yes,small,structured,yes,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,medium,no,unknown,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,number,predict,no,small,structured,yes,yes,high,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,multi_class,medium,random forest
+supervised,tabular,label,classify,no,small,structured,yes,no,low,high,yes,no,multi_class,high,xgboost
+supervised,video,label,classify,yes,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,unknown,multi_class,medium,logistic regression
+supervised,tabular,label,classify,no,large,structured,no,yes,medium,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,no,yes,medium,high,no,unknown,binary,medium,logistic regression
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,no,binary,low,knn
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,no,binary,low,decision tree
+supervised,text,label,classify,no,small,unstructured,yes,no,low,high,no,no,binary,medium,svm
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,medium,no,unknown,not_applicable,medium,decision tree
+supervised,tabular,label,flag,no,small,structured,no,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,yes,no,binary,high,xgboost
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,yes,no,binary,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,medium,no,unknown,binary,high,decision tree
+supervised,tabular,number,predict,no,small,structured,yes,no,low,high,no,no,not_applicable,high,svm
+supervised,tabular,probability,classify,no,medium,structured,no,yes,medium,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,label,flag,no,medium,structured,yes,no,medium,high,yes,no,binary,medium,xgboost
+supervised,tabular,number,classify,no,small,structured,no,yes,low,medium,no,no,not_applicable,low,knn
+supervised,text,label,classify,yes,large,unstructured,no,no,high,high,yes,no,multi_class,high,rnn
+supervised,number,number,predict,no,small,structured,no,yes,low,medium,no,unknown,not_applicable,low,linear regression
+supervised,tabular,label,predict,no,large,structured,yes,no,high,high,yes,no,binary,high,ann
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,no,multi_class,medium,xgboost
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,no,binary,medium,decision tree
+supervised,text,audio,generate,yes,large,unstructured,yes,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,audio,mixed,recommend,no,large,unstructured,yes,no,medium,high,yes,no,binary,medium,ann
+supervised,tabular,tabular,predict,no,medium,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,small,structured,no,no,high,high,no,no,multi_class,high,svm
+supervised,tabular,number,predict,no,medium,structured,yes,yes,low,medium,no,yes,not_applicable,high,linear regression
+supervised,tabular,label,classify,yes,small,structured,yes,yes,low,high,no,yes,binary,low,logistic regression
+self-supervised,audio,label,transcribe,yes,medium,unstructured,no,no,high,high,yes,no,multi_class,high,rnn
+supervised,tabular,number,predict,no,medium,structured,no,yes,medium,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,yes,no,multi_class,high,random forest
+self-supervised,tabular,mixed,classify,no,medium,structured,no,no,medium,high,yes,no,binary,high,cnn
+supervised,tabular,label,classify,no,medium,structured,yes,no,low,high,yes,no,binary,high,random forest
+supervised,tabular,mixed,predict,no,large,unstructured,yes,no,high,high,yes,no,binary,high,ann
+supervised,tabular,label,classify,no,medium,semi_structured,yes,no,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,recommend,no,medium,structured,no,yes,low,medium,no,no,multi_class,low,knn
+supervised,tabular,label,classify,yes,medium,structured,no,yes,high,medium,no,unknown,binary,medium,logistic regression
+supervised,image,label,generate,no,medium,unstructured,yes,no,low,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,predict,no,large,unstructured,no,no,medium,high,yes,no,binary,high,ann
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,high,no,no,multi_class,high,xgboost
+supervised,tabular,label,classify,yes,medium,structured,yes,yes,medium,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,unknown,binary,medium,decision tree
+supervised,tabular,number,forecast,yes,medium,structured,no,yes,medium,medium,no,unknown,not_applicable,low,linear regression
+supervised,tabular,label,recommend,no,medium,structured,yes,no,low,medium,no,no,binary,low,knn
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,image,label,classify,no,medium,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,generate,no,small,unstructured,yes,no,medium,high,yes,no,not_applicable,high,ann
+supervised,time_series,text,forecast,yes,large,structured,no,no,medium,high,yes,no,not_applicable,medium,rnn
+supervised,image,mixed,detect,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,high,no,no,multi_class,medium,random forest
+supervised,image,video,generate,no,large,unstructured,yes,no,low,high,yes,no,not_applicable,high,cnn
+supervised,image,label,classify,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,text,probability,classify,no,small,unstructured,yes,yes,low,medium,no,no,multi_class,medium,naive bayes
+supervised,text,label,classify,no,large,unstructured,no,no,medium,high,no,no,binary,low,svm
+supervised,mixed,number,predict,no,large,structured,yes,no,high,high,no,no,not_applicable,high,ann
+supervised,tabular,label,generate,no,medium,semi_structured,no,no,high,high,yes,no,multi_class,high,ann
+supervised,tabular,number,predict,no,medium,structured,yes,yes,high,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,probability,classify,no,large,structured,yes,yes,medium,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,number,classify,no,large,structured,no,yes,medium,medium,no,no,not_applicable,medium,knn
+reinforcements,tabular,number,recommend,no,small,unstructured,no,no,medium,high,yes,no,not_applicable,high,ann
+supervised,number,number,predict,no,small,structured,no,yes,medium,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,binary,low,decision tree
+supervised,text,probability,flag,no,medium,unstructured,yes,yes,high,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,no,multi_class,low,knn
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,high,no,yes,binary,low,logistic regression
+supervised,text,label,classify,no,medium,unstructured,no,no,low,high,no,no,multi_class,medium,svm
+supervised,tabular,number,predict,no,large,structured,no,yes,high,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,tabular,predict,no,large,structured,no,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,medium,no,no,not_applicable,high,decision tree
+supervised,image,probability,classify,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,audio,image,classify,yes,large,unstructured,yes,no,low,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,predict,no,medium,structured,no,no,low,high,no,no,not_applicable,medium,xgboost
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,yes,no,binary,high,ann
+supervised,number,number,forecast,yes,large,structured,yes,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,large,structured,yes,no,low,high,yes,no,multi_class,high,cnn
+supervised,image,mixed,classify,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,yes,binary,low,logistic regression
+semi-supervised,tabular,probability,classify,no,small,structured,yes,yes,low,medium,no,unknown,binary,medium,logistic regression
+supervised,tabular,label,classify,no,large,structured,no,no,low,medium,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,small,structured,yes,yes,low,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,number,classify,no,medium,semi_structured,no,no,high,high,yes,no,not_applicable,high,ann
+supervised,tabular,label,flag,no,large,structured,yes,yes,high,high,yes,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,large,structured,yes,yes,low,high,yes,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,yes,no,binary,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,medium,no,yes,binary,low,logistic regression
+supervised,text,number,generate,yes,large,unstructured,no,no,medium,high,yes,no,not_applicable,high,rnn
+supervised,tabular,probability,flag,no,large,structured,no,yes,medium,high,no,no,binary,high,random forest
+supervised,tabular,label,predict,no,large,structured,no,no,medium,high,no,no,binary,high,ann
+supervised,tabular,number,predict,no,small,structured,yes,yes,low,medium,no,unknown,not_applicable,low,decision tree
+supervised,tabular,label,classify,no,small,structured,no,yes,high,medium,no,no,multi_class,low,knn
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,no,no,multi_class,high,svm
+supervised,tabular,number,predict,no,medium,structured,no,no,low,high,no,no,not_applicable,high,svm
+supervised,tabular,number,predict,no,large,structured,no,no,medium,high,yes,no,not_applicable,high,xgboost
+supervised,tabular,number,classify,no,large,structured,no,yes,low,medium,no,no,not_applicable,low,knn
+supervised,image,image,generate,no,large,unstructured,no,no,low,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,predict,no,medium,structured,no,yes,high,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,no,binary,medium,random forest
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,no,no,binary,high,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,yes,no,multi_class,medium,xgboost
+supervised,tabular,label,recommend,yes,medium,structured,yes,no,high,high,no,no,binary,medium,ann
+supervised,audio,label,classify,yes,medium,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,number,number,predict,no,small,structured,no,yes,low,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,number,recommend,no,small,structured,no,yes,low,medium,no,no,not_applicable,low,knn
+supervised,tabular,label,classify,no,medium,structured,no,yes,high,high,no,no,multi_class,high,random forest
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,high,yes,no,binary,high,xgboost
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,no,multi_class,medium,decision tree
+supervised,video,probability,detect,yes,large,unstructured,yes,no,low,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,small,structured,yes,no,medium,medium,no,no,not_applicable,medium,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,multi_class,high,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,high,no,unknown,not_applicable,medium,linear regression
+supervised,tabular,label,flag,no,large,structured,yes,no,medium,high,yes,no,binary,high,xgboost
+supervised,image,number,detect,no,medium,unstructured,yes,no,medium,high,no,yes,not_applicable,high,svm
+supervised,image,number,detect,no,medium,unstructured,yes,no,high,high,no,no,not_applicable,high,svm
+supervised,tabular,label,classify,no,medium,structured,no,no,low,high,no,no,multi_class,medium,svm
+supervised,tabular,number,predict,no,small,structured,no,yes,low,medium,no,no,not_applicable,low,knn
+supervised,text,label,classify,yes,large,unstructured,no,no,medium,high,yes,no,multi_class,high,rnn
+reinforcements,mixed,number,recommend,no,medium,structured,no,no,high,high,no,no,not_applicable,high,ann
+reinforcements,mixed,number,recommend,no,small,unstructured,yes,no,medium,high,yes,no,not_applicable,medium,ann
+supervised,tabular,number,forecast,yes,medium,structured,yes,yes,high,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,binary,medium,decision tree
+supervised,tabular,probability,classify,no,small,structured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,medium,no,no,not_applicable,low,decision tree
+reinforcements,tabular,number,recommend,no,small,unstructured,yes,no,high,high,no,no,not_applicable,medium,ann
+supervised,time_series,number,forecast,yes,medium,structured,yes,no,medium,high,yes,no,not_applicable,medium,rnn
+reinforcements,number,number,recommend,no,medium,structured,yes,no,high,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,no,no,binary,medium,random forest
+supervised,image,label,classify,no,large,unstructured,yes,no,high,high,yes,no,binary,high,cnn
+self-supervised,text,number,translate,yes,large,unstructured,yes,no,low,high,yes,no,not_applicable,medium,rnn
+supervised,image,label,detect,no,small,unstructured,no,no,medium,high,no,no,binary,medium,svm
+supervised,tabular,label,flag,no,large,structured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,no,no,binary,low,svm
+supervised,tabular,label,classify,no,medium,structured,no,yes,high,medium,no,yes,binary,low,logistic regression
+supervised,tabular,label,group,no,small,structured,no,yes,medium,medium,no,no,binary,low,knn
+supervised,tabular,number,predict,no,medium,structured,yes,no,high,high,yes,no,not_applicable,medium,ann
+supervised,tabular,number,predict,no,large,structured,yes,no,medium,high,no,no,not_applicable,medium,xgboost
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,medium,no,yes,multi_class,medium,logistic regression
+supervised,text,label,classify,no,medium,unstructured,yes,no,low,high,no,yes,binary,high,svm
+supervised,tabular,number,forecast,yes,small,structured,no,yes,low,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,medium,no,no,binary,medium,knn
+supervised,number,number,predict,no,large,structured,yes,no,high,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,high,no,yes,multi_class,medium,logistic regression
+supervised,tabular,label,flag,no,large,structured,yes,yes,low,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,label,flag,no,medium,structured,yes,yes,medium,high,no,yes,multi_class,low,logistic regression
+supervised,number,number,classify,no,large,semi_structured,no,no,high,high,yes,no,not_applicable,medium,ann
+supervised,tabular,label,classify,no,small,structured,no,no,medium,high,no,no,binary,medium,svm
+supervised,image,label,detect,no,large,unstructured,yes,no,low,high,no,no,binary,medium,svm
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,high,no,unknown,binary,low,logistic regression
+supervised,tabular,number,predict,no,medium,structured,yes,yes,medium,medium,no,no,not_applicable,low,decision tree
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,no,binary,medium,decision tree
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,no,binary,medium,decision tree
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,binary,medium,naive bayes
+supervised,tabular,probability,classify,yes,small,structured,yes,yes,high,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,multi_class,low,random forest
+supervised,tabular,label,classify,no,medium,semi_structured,no,no,medium,medium,no,no,multi_class,high,random forest
+supervised,text,label,classify,yes,small,unstructured,yes,no,medium,high,yes,no,binary,high,rnn
+supervised,tabular,label,classify,no,medium,structured,no,yes,low,medium,no,no,binary,low,decision tree
+supervised,tabular,number,predict,no,large,structured,yes,no,medium,high,yes,no,not_applicable,medium,xgboost
+supervised,image,image,generate,no,large,unstructured,no,no,medium,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,no,no,multi_class,medium,xgboost
+supervised,time_series,text,forecast,yes,large,structured,no,no,medium,high,yes,no,not_applicable,high,rnn
+supervised,tabular,label,classify,no,large,structured,yes,yes,high,high,no,no,binary,medium,xgboost
+supervised,image,label,detect,no,large,unstructured,yes,no,medium,high,yes,no,binary,high,cnn
+supervised,tabular,label,classify,no,small,structured,no,yes,low,medium,no,no,binary,medium,knn
+supervised,text,label,classify,no,small,unstructured,yes,no,medium,high,no,unknown,binary,high,svm
+supervised,image,image,classify,no,medium,unstructured,no,no,high,high,yes,no,not_applicable,high,cnn
+supervised,tabular,probability,classify,no,small,structured,no,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,tabular,probability,classify,no,medium,structured,no,yes,medium,high,no,unknown,binary,low,logistic regression
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,yes,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,medium,structured,no,no,medium,high,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,large,structured,yes,no,high,high,no,no,not_applicable,high,xgboost
+supervised,image,label,detect,no,large,unstructured,no,no,medium,high,no,no,multi_class,high,svm
+supervised,image,video,classify,no,medium,unstructured,yes,no,high,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,yes,no,multi_class,medium,ann
+supervised,image,image,generate,no,large,unstructured,yes,no,high,high,yes,no,not_applicable,high,cnn
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,unknown,multi_class,low,logistic regression
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,medium,no,unknown,not_applicable,medium,decision tree
+supervised,tabular,number,predict,no,small,structured,no,no,medium,high,no,no,not_applicable,high,random forest
+unsupervised,tabular,label,group,no,large,unstructured,no,no,low,high,yes,no,multi_class,low,ann
+supervised,tabular,label,classify,no,large,structured,no,no,low,high,no,no,multi_class,medium,xgboost
+supervised,mixed,number,predict,no,large,structured,yes,no,medium,high,yes,no,not_applicable,high,ann
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,no,no,binary,high,xgboost
+semi-supervised,tabular,label,generate,no,large,unstructured,no,no,high,high,yes,no,multi_class,high,ann
+supervised,tabular,probability,classify,no,small,structured,no,yes,low,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,number,predict,no,medium,structured,yes,no,medium,high,no,no,not_applicable,low,random forest
+supervised,tabular,label,group,no,small,structured,yes,yes,medium,medium,no,no,binary,low,knn
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,high,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,large,structured,yes,no,low,high,yes,no,multi_class,high,xgboost
+supervised,tabular,label,classify,no,large,structured,no,yes,medium,high,no,no,binary,high,random forest
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,large,structured,yes,yes,medium,high,no,no,not_applicable,high,xgboost
+supervised,tabular,probability,flag,no,medium,structured,yes,yes,low,medium,no,no,binary,high,naive bayes
+supervised,tabular,label,classify,no,small,structured,yes,yes,low,medium,no,no,binary,low,knn
+supervised,tabular,number,predict,no,medium,structured,yes,no,medium,medium,no,no,not_applicable,medium,random forest
+supervised,tabular,tabular,predict,no,small,structured,no,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,medium,high,no,yes,binary,high,logistic regression
+supervised,image,probability,classify,no,large,unstructured,no,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,multi_class,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,no,binary,low,random forest
+supervised,image,probability,detect,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,cnn
+supervised,time_series,text,predict,yes,medium,structured,yes,no,high,high,yes,no,not_applicable,medium,rnn
+reinforcements,mixed,number,recommend,no,large,structured,yes,no,medium,high,yes,no,not_applicable,medium,ann
+supervised,tabular,probability,flag,no,medium,structured,yes,yes,high,medium,no,no,multi_class,high,naive bayes
+supervised,image,label,generate,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,cnn
+self-supervised,image,label,classify,no,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,medium,structured,no,no,low,high,no,yes,multi_class,high,svm
+supervised,tabular,number,predict,no,medium,structured,no,no,high,high,no,yes,not_applicable,medium,svm
+supervised,tabular,probability,flag,no,small,structured,yes,no,low,high,no,no,binary,high,xgboost
+supervised,tabular,label,classify,no,large,structured,yes,yes,high,high,no,no,multi_class,high,random forest
+supervised,tabular,tabular,forecast,yes,small,structured,yes,yes,medium,high,no,unknown,not_applicable,low,linear regression
+semi-supervised,tabular,label,classify,no,medium,structured,no,yes,low,medium,no,yes,binary,low,logistic regression
+supervised,tabular,tabular,predict,no,small,structured,yes,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,number,predict,no,small,structured,yes,yes,medium,medium,no,no,not_applicable,medium,decision tree
+self-supervised,video,video,classify,yes,large,unstructured,yes,no,low,high,yes,no,not_applicable,high,cnn
+supervised,tabular,number,predict,no,medium,structured,no,no,high,high,yes,no,not_applicable,high,xgboost
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,high,no,no,multi_class,high,random forest
+semi-supervised,image,probability,detect,no,large,unstructured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,binary,high,xgboost
+supervised,tabular,label,classify,no,small,structured,no,yes,medium,medium,no,no,multi_class,low,decision tree
+supervised,tabular,label,classify,no,medium,structured,no,yes,medium,high,no,no,binary,medium,random forest
+supervised,tabular,number,forecast,yes,small,structured,yes,yes,medium,medium,no,unknown,not_applicable,high,linear regression
+supervised,number,number,forecast,yes,small,structured,no,yes,medium,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,probability,classify,no,small,structured,yes,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,image,label,detect,no,large,unstructured,yes,no,low,high,yes,no,binary,high,cnn
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,no,yes,low,medium,no,no,binary,low,decision tree
+supervised,tabular,probability,classify,no,medium,structured,no,yes,medium,medium,no,unknown,binary,low,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,no,low,medium,no,no,not_applicable,medium,knn
+supervised,tabular,label,flag,no,medium,structured,no,yes,medium,medium,no,unknown,binary,medium,logistic regression
+supervised,tabular,probability,classify,no,small,structured,yes,yes,low,medium,no,yes,binary,high,logistic regression
+supervised,tabular,number,predict,no,large,structured,yes,yes,medium,high,yes,no,not_applicable,high,xgboost
+supervised,text,label,classify,no,small,unstructured,no,no,high,high,no,no,binary,low,svm
+supervised,number,label,classify,no,small,structured,no,yes,medium,medium,no,yes,binary,high,logistic regression
+supervised,tabular,label,classify,no,large,structured,no,yes,high,medium,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,large,structured,yes,no,high,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,medium,structured,yes,no,medium,high,no,no,not_applicable,high,random forest
+semi-supervised,number,label,classify,no,small,structured,yes,yes,low,high,no,yes,binary,low,logistic regression
+supervised,tabular,number,predict,no,medium,structured,yes,no,high,high,yes,no,not_applicable,high,xgboost
+supervised,tabular,number,predict,no,large,structured,no,no,low,high,no,no,not_applicable,medium,xgboost
+supervised,tabular,number,predict,no,medium,structured,yes,no,medium,high,yes,no,not_applicable,medium,xgboost
+supervised,tabular,number,predict,no,large,structured,no,no,high,high,no,no,not_applicable,high,xgboost
+supervised,tabular,label,classify,no,medium,structured,yes,yes,high,medium,no,unknown,multi_class,medium,decision tree
+supervised,tabular,number,predict,no,medium,structured,yes,no,high,high,no,no,not_applicable,high,random forest
+supervised,tabular,label,classify,yes,small,structured,no,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,number,predict,no,medium,structured,no,no,medium,high,yes,no,not_applicable,high,xgboost
+supervised,tabular,probability,flag,no,medium,structured,yes,yes,medium,high,no,no,multi_class,high,xgboost
+supervised,tabular,probability,flag,no,medium,structured,no,yes,medium,high,no,no,binary,medium,random forest
+supervised,tabular,number,forecast,yes,small,structured,yes,yes,medium,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,classify,no,large,structured,no,no,medium,high,yes,no,multi_class,medium,xgboost
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,binary,high,xgboost
+supervised,text,label,flag,no,medium,unstructured,yes,yes,medium,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,label,classify,no,small,structured,yes,yes,medium,medium,no,no,binary,medium,knn
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,medium,no,no,binary,medium,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,medium,no,yes,multi_class,low,logistic regression
+supervised,text,probability,flag,no,medium,unstructured,yes,yes,medium,medium,no,no,multi_class,medium,naive bayes
+supervised,image,mixed,classify,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,small,structured,no,no,low,high,no,no,binary,medium,svm
+supervised,tabular,label,classify,no,small,structured,no,no,medium,medium,no,no,multi_class,medium,knn
+supervised,tabular,number,predict,no,large,unstructured,yes,no,medium,high,yes,no,not_applicable,low,ann
+supervised,tabular,number,predict,no,large,structured,yes,no,low,high,no,no,not_applicable,high,random forest
+supervised,tabular,label,classify,no,large,structured,no,no,low,high,no,no,binary,medium,svm
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,binary,high,random forest
+supervised,tabular,number,forecast,yes,large,structured,no,yes,low,high,no,yes,not_applicable,high,linear regression
+supervised,tabular,label,predict,no,small,structured,no,yes,low,medium,no,no,binary,low,knn
+supervised,tabular,label,flag,no,medium,structured,no,no,medium,high,yes,no,binary,medium,xgboost
+supervised,tabular,label,classify,no,small,structured,no,no,low,high,no,no,binary,high,svm
+supervised,number,tabular,predict,no,small,structured,no,yes,low,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,large,structured,no,no,high,high,no,no,multi_class,high,random forest
+supervised,tabular,probability,classify,no,medium,structured,no,yes,low,medium,no,unknown,binary,low,logistic regression
+supervised,tabular,label,recommend,no,small,structured,no,no,high,medium,no,no,multi_class,high,knn
+supervised,text,label,classify,no,small,unstructured,no,no,medium,high,no,yes,binary,medium,svm
+supervised,tabular,number,predict,no,medium,structured,no,yes,low,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,label,recommend,no,medium,structured,no,yes,low,medium,no,no,binary,medium,knn
+supervised,tabular,label,classify,no,large,structured,yes,no,high,high,yes,no,binary,high,xgboost
+supervised,tabular,label,classify,no,large,structured,no,no,low,high,no,no,multi_class,high,random forest
+supervised,tabular,number,predict,no,large,structured,yes,yes,medium,medium,no,no,not_applicable,medium,random forest
+supervised,tabular,number,predict,no,medium,structured,yes,yes,high,medium,no,yes,not_applicable,low,linear regression
+supervised,number,label,classify,no,small,structured,yes,yes,medium,high,no,yes,binary,low,logistic regression
+supervised,tabular,label,classify,no,small,structured,yes,yes,high,high,no,unknown,binary,medium,logistic regression
+supervised,tabular,label,recommend,no,small,structured,no,yes,low,medium,no,no,binary,low,knn
+self-supervised,text,text,classify,yes,medium,unstructured,no,no,low,high,yes,no,not_applicable,medium,rnn
+supervised,text,label,classify,no,small,unstructured,yes,yes,high,medium,no,no,multi_class,high,naive bayes
+supervised,tabular,number,predict,no,medium,structured,yes,yes,high,medium,no,yes,not_applicable,medium,linear regression
+supervised,text,label,classify,no,small,unstructured,yes,yes,low,medium,no,no,multi_class,medium,naive bayes
+supervised,tabular,number,predict,no,large,structured,yes,yes,medium,medium,yes,no,not_applicable,medium,random forest
+supervised,text,label,classify,no,medium,unstructured,no,no,low,high,no,no,multi_class,high,svm
+supervised,text,label,classify,no,small,unstructured,yes,yes,medium,medium,no,no,binary,high,naive bayes
+supervised,tabular,number,predict,no,small,structured,no,yes,high,high,no,yes,not_applicable,low,linear regression
+supervised,text,label,classify,no,small,unstructured,no,no,low,high,no,no,binary,high,svm
+supervised,tabular,number,predict,no,large,structured,no,no,medium,high,no,no,not_applicable,high,xgboost
+supervised,tabular,label,classify,no,large,structured,yes,yes,medium,high,no,no,binary,high,random forest
+supervised,tabular,label,classify,no,large,structured,no,no,low,high,no,no,binary,medium,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,yes,high,medium,no,no,multi_class,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,yes,no,medium,high,no,no,binary,medium,xgboost
+supervised,tabular,label,classify,no,medium,structured,yes,yes,medium,high,no,no,binary,high,random forest
+supervised,text,probability,flag,no,small,unstructured,yes,yes,medium,medium,no,no,binary,high,naive bayes
+supervised,mixed,probability,generate,yes,large,semi_structured,no,no,low,high,yes,no,multi_class,high,ann
+supervised,tabular,number,predict,no,large,structured,no,yes,medium,high,no,no,not_applicable,medium,xgboost
+supervised,tabular,number,predict,no,small,structured,yes,no,low,medium,no,no,not_applicable,medium,random forest
+supervised,tabular,probability,flag,no,large,structured,no,no,low,high,yes,no,multi_class,high,xgboost
+supervised,tabular,label,predict,no,large,unstructured,no,no,medium,high,yes,no,multi_class,high,ann
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,medium,no,no,multi_class,medium,random forest
+supervised,tabular,number,predict,no,large,structured,yes,no,high,high,no,no,not_applicable,low,random forest
+supervised,number,number,forecast,yes,medium,structured,yes,yes,medium,medium,no,yes,not_applicable,low,linear regression
+supervised,tabular,label,classify,no,small,structured,yes,no,medium,high,yes,no,multi_class,low,xgboost
+supervised,tabular,number,predict,no,small,structured,no,yes,medium,medium,no,no,not_applicable,low,decision tree
+supervised,image,label,detect,no,large,unstructured,yes,no,high,high,yes,no,binary,high,cnn
+supervised,tabular,probability,classify,no,medium,structured,yes,yes,medium,high,no,yes,binary,medium,logistic regression
+supervised,image,probability,detect,no,large,unstructured,yes,no,medium,high,yes,no,multi_class,high,cnn
+supervised,tabular,label,classify,no,large,structured,yes,no,high,high,no,no,multi_class,high,random forest
+supervised,tabular,number,predict,no,large,structured,yes,yes,medium,medium,no,no,not_applicable,medium,decision tree
+supervised,tabular,label,classify,no,large,structured,no,yes,low,medium,no,unknown,binary,medium,logistic regression
+supervised,video,label,classify,yes,large,unstructured,no,no,low,high,yes,no,multi_class,high,cnn
+supervised,tabular,number,predict,no,large,structured,yes,no,low,high,no,no,not_applicable,high,xgboost
+supervised,tabular,label,classify,no,medium,structured,yes,yes,low,medium,no,no,binary,medium,decision tree
+supervised,number,number,predict,no,medium,structured,no,yes,low,high,no,yes,not_applicable,medium,linear regression
+supervised,tabular,probability,flag,no,medium,structured,yes,no,medium,high,no,no,multi_class,high,random forest
+supervised,tabular,label,classify,no,medium,structured,yes,no,medium,high,no,no,binary,medium,random forest
+self-supervised,image,label,classify,no,large,unstructured,no,no,medium,high,yes,unknown,multi_class,high,cnn
+supervised,tabular,label,classify,yes,large,unstructured,no,no,medium,high,yes,no,multi_class,high,xgboost
