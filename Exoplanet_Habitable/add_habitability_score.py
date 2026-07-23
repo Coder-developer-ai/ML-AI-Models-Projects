@@ -1,179 +1,239 @@
 """
-add_habitability_score.py
+habitability_v2.py
 
-Adds TWO new columns to the exoplanet dataset:
-    - habitability_score : numeric score (0-15) from weighted criteria
-    - habitability_class : 'Potentially Habitable' / 'Possibly Habitable' / 'Non-Habitable'
+Adds these new columns to the exoplanet dataset:
 
-Based on a weighted rule system over the planet/star properties actually
-available in the NASA Exoplanet Archive export (pl_rade, pl_masse, pl_dens,
-pl_eqt, pl_insol, pl_orbeccen, st_spectype, st_age).
+    esi                      : Earth Similarity Index, 0-1 (Schulze-Makuch et al. 2011)
+    habitability_category    : 4-tier category derived from ESI
+    planet_type               : Rocky / Super-Earth / Sub-Neptune / Neptune-like / Gas Giant
+                                 (based on radius & mass, standard exoplanet-science thresholds)
+    inferred_atmosphere       : A PLAUSIBLE atmosphere type, inferred from planet_type + temperature.
+                                 *** This is a hypothesis, NOT a real measured detection. ***
+                                 The dataset has no actual gas/molecule detection column --
+                                 SPEC_TYPE/NOTE/MINWAVELNG/MAXWAVELNG are observation metadata only
+                                 (instrument, spectral mode, wavelength coverage, reduction pipeline
+                                 notes) -- not composition data. Verified by keyword search: every
+                                 apparent match for gas names in NOTE (e.g. "TiO") turned out to be a
+                                 substring of an unrelated word (e.g. "ExoTiC-JEDI", a pipeline name).
 
-NOTE: The dataset does NOT contain atmospheric molecule detections
-(NOTE/MINWAVELNG/MAXWAVELNG/SPEC_TYPE are observation metadata, not
-composition data), so the "water detected" bonus from the original scoring
-table is implemented as an optional hook only -- it contributes 0 unless you
-merge in a real atmosphere-composition column and set WATER_COLUMN below.
+Why ESI instead of an arbitrary point system:
+    ESI is a real, published, peer-reviewed astrobiology metric (Schulze-Makuch et al. 2011,
+    "A Two-Tiered Approach to Assessing the Habitability of Exoplanets"), used in actual
+    literature/catalogs (e.g. PHL's Habitable Exoplanets Catalog). It compares each planet
+    property to Earth's value using a geometric-mean similarity formula, rather than made-up
+    point weights.
+
+    ESI_i    = (1 - |x_i - x_earth| / (x_i + x_earth)) ^ (w_i / n)
+    ESI_interior = sqrt(ESI_radius * ESI_density)
+    ESI_surface  = sqrt(ESI_escape_velocity * ESI_temperature)
+    ESI          = sqrt(ESI_interior * ESI_surface)
+
+    Reference values (Earth = 1 in relative units):
+        radius            = 1 Earth radius
+        density           = 5.51 g/cm^3
+        escape velocity   = 11.19 km/s
+        surface temp      = 288 K   (dataset's pl_eqt used as the closest available proxy)
+
+    Published weights (n=4 properties): radius=0.57, density=1.07, escape velocity=0.70, temp=5.58
 
 Usage:
-    python add_habitability_score.py input.csv output.csv
+    python habitability_v2.py input.csv output.csv
 """
 
-import re
+import math
 import sys
 import pandas as pd
 
 
-# ----------------------------------------------------------------------
-# Optional: set this to a column name (e.g. "water_detected") containing
-# True/False if you later merge in real atmosphere-composition data.
-# Leave as None to skip this bonus entirely (matches current dataset).
-# ----------------------------------------------------------------------
-WATER_COLUMN = None
-WATER_BONUS = 3
+# ---------------------------------------------------------------
+# Earth reference values and ESI weights (from Schulze-Makuch et al. 2011)
+# ---------------------------------------------------------------
+EARTH_RADIUS = 1.0          # Earth radii
+EARTH_DENSITY = 5.51        # g/cm^3
+EARTH_ESC_VEL = 11.19       # km/s
+EARTH_TEMP = 288.0          # K
 
-# Points awarded when a criterion is satisfied
-POINTS = {
-    "radius": 2,     # pl_rade in [0.8, 1.8] Earth radii
-    "mass": 2,       # pl_masse in [0.5, 5] Earth masses
-    "temperature": 3,  # pl_eqt in [180, 320] K
-    "insolation": 3,   # pl_insol in [0.3, 1.8] Earth flux
-    "density": 2,      # pl_dens > 3 g/cm^3
-    "eccentricity": 1, # pl_orbeccen < 0.3
-    "star_type": 1,    # spectral type F, G, K, or early M (M0-M5)
-    "age": 1,          # st_age > 1 Gyr
+WEIGHTS = {
+    "radius": 0.57,
+    "density": 1.07,
+    "esc_vel": 0.70,
+    "temp": 5.58,
 }
-
-MAX_SCORE = sum(POINTS.values()) + (WATER_BONUS if WATER_COLUMN else 0)
-
-# Classification thresholds, scaled proportionally from the original
-# 18-point scale (15-18 / 10-14 / 0-9) to whatever MAX_SCORE actually is.
-POTENTIALLY_HABITABLE_CUTOFF = round(MAX_SCORE * (15 / 18))
-POSSIBLY_HABITABLE_CUTOFF = round(MAX_SCORE * (10 / 18))
+N_PROPERTIES = 4
 
 
-def in_range(value, low, high):
-    return pd.notna(value) and low <= value <= high
+def esi_component(value, reference, weight):
+    if pd.isna(value) or value <= 0:
+        return None
+    ratio_term = abs(value - reference) / (value + reference)
+    return (1 - ratio_term) ** (weight / N_PROPERTIES)
 
 
-def is_early_fgk_star(spectype):
-    if pd.isna(spectype):
-        return False
-    spectype = str(spectype).strip().upper()
-    match = re.match(r"^([OBAFGKM])(\d(\.\d)?)?", spectype)
-    if not match:
-        return False
-    letter = match.group(1)
-    if letter in ("F", "G", "K"):
-        return True
-    if letter == "M":
-        number = match.group(2)
-        # "Early M" ~ M0-M5
-        if number is None:
-            return False
-        return float(number) <= 5.0
-    return False
+def compute_escape_velocity_ratio(mass_earth, radius_earth):
+    """Escape velocity relative to Earth: v_esc / v_esc_earth = sqrt(M/R) in Earth units."""
+    if pd.isna(mass_earth) or pd.isna(radius_earth) or radius_earth <= 0:
+        return None
+    return math.sqrt(mass_earth / radius_earth) * EARTH_ESC_VEL
 
 
-def score_row(row):
-    score = 0
-    details = {}
-
-    if in_range(row.get("pl_rade"), 0.8, 1.8):
-        score += POINTS["radius"]
-        details["radius"] = True
-    else:
-        details["radius"] = False
-
-    if in_range(row.get("pl_masse"), 0.5, 5.0):
-        score += POINTS["mass"]
-        details["mass"] = True
-    else:
-        details["mass"] = False
-
-    if in_range(row.get("pl_eqt"), 180, 320):
-        score += POINTS["temperature"]
-        details["temperature"] = True
-    else:
-        details["temperature"] = False
-
-    if in_range(row.get("pl_insol"), 0.3, 1.8):
-        score += POINTS["insolation"]
-        details["insolation"] = True
-    else:
-        details["insolation"] = False
-
+def compute_esi(row):
+    radius = row.get("pl_rade")
     density = row.get("pl_dens")
-    if pd.notna(density) and density > 3:
-        score += POINTS["density"]
-        details["density"] = True
-    else:
-        details["density"] = False
+    mass = row.get("pl_masse")
+    temp = row.get("pl_eqt")
 
-    eccen = row.get("pl_orbeccen")
-    if pd.notna(eccen) and eccen < 0.3:
-        score += POINTS["eccentricity"]
-        details["eccentricity"] = True
-    else:
-        details["eccentricity"] = False
+    esc_vel = compute_escape_velocity_ratio(mass, radius)
 
-    if is_early_fgk_star(row.get("st_spectype")):
-        score += POINTS["star_type"]
-        details["star_type"] = True
-    else:
-        details["star_type"] = False
+    esi_radius = esi_component(radius, EARTH_RADIUS, WEIGHTS["radius"])
+    esi_density = esi_component(density, EARTH_DENSITY, WEIGHTS["density"])
+    esi_escvel = esi_component(esc_vel, EARTH_ESC_VEL, WEIGHTS["esc_vel"])
+    esi_temp = esi_component(temp, EARTH_TEMP, WEIGHTS["temp"])
 
-    age = row.get("st_age")
-    if pd.notna(age) and age > 1.0:  # st_age is in Gyr in this dataset
-        score += POINTS["age"]
-        details["age"] = True
-    else:
-        details["age"] = False
+    interior_parts = [x for x in (esi_radius, esi_density) if x is not None]
+    surface_parts = [x for x in (esi_escvel, esi_temp) if x is not None]
 
-    if WATER_COLUMN and WATER_COLUMN in row and bool(row[WATER_COLUMN]):
-        score += WATER_BONUS
-        details["water"] = True
-    elif WATER_COLUMN:
-        details["water"] = False
+    # Need at least one property from each half (interior + surface) to compute anything meaningful
+    if not interior_parts or not surface_parts:
+        return None
 
-    return score, details
+    esi_interior = math.prod(interior_parts) ** (1 / len(interior_parts))
+    esi_surface = math.prod(surface_parts) ** (1 / len(surface_parts))
+
+    return math.sqrt(esi_interior * esi_surface)
 
 
-def classify(score):
-    if score >= POTENTIALLY_HABITABLE_CUTOFF:
-        return "Potentially Habitable"
-    elif score >= POSSIBLY_HABITABLE_CUTOFF:
-        return "Possibly Habitable"
+def esi_to_category(esi):
+    if esi is None:
+        return "Insufficient Data"
+    if esi >= 0.8:
+        return "Earth-like (High Habitability Potential)"
+    elif esi >= 0.6:
+        return "Moderately Habitable"
+    elif esi >= 0.4:
+        return "Marginally Habitable"
     else:
         return "Non-Habitable"
 
 
+def classify_planet_type(radius, mass):
+    """Standard radius/mass-based exoplanet classification bins used across exoplanet science."""
+    if pd.isna(radius):
+        return "Unknown"
+    if radius < 1.5:
+        return "Rocky"
+    elif radius < 2.0:
+        return "Super-Earth"
+    elif radius < 4.0:
+        return "Sub-Neptune"
+    elif radius < 10.0:
+        return "Neptune-like"
+    else:
+        return "Gas Giant"
+
+
+def infer_atmosphere(planet_type, temp):
+    """
+    Physically-motivated HYPOTHESIS about likely dominant atmosphere type.
+    NOT a real detection -- this dataset contains no measured gas/molecule data.
+    Based on standard exoplanet formation/atmosphere-retention science:
+      - Large planets retain primordial H/He envelopes.
+      - Small, hot rocky planets tend to lose primary atmospheres and may
+        retain only thin secondary atmospheres (CO2/N2) or none at all.
+      - Extremely hot planets (>1000K) risk atmospheric escape / exotic
+        vaporized-rock atmospheres.
+    """
+    if planet_type == "Unknown":
+        return "Unknown (insufficient data)"
+
+    if planet_type == "Gas Giant":
+        return "Inferred: H/He-dominated primordial envelope"
+
+    if planet_type == "Neptune-like":
+        return "Inferred: H/He + volatile ices (Neptune-like envelope)"
+
+    if planet_type == "Sub-Neptune":
+        if pd.notna(temp) and temp > 800:
+            return "Inferred: H/He envelope likely eroding (highly irradiated)"
+        return "Inferred: possible H/He or steam/volatile-rich envelope"
+
+    # Rocky or Super-Earth
+    if pd.isna(temp):
+        return "Inferred: thin secondary atmosphere (temperature unknown)"
+    if temp > 1000:
+        return "Inferred: atmosphere likely stripped / exotic vapor (extreme heat)"
+    elif temp > 500:
+        return "Inferred: thin or no atmosphere (too hot for stable volatiles)"
+    elif 180 <= temp <= 320:
+        return "Inferred: possible CO2/N2/H2O secondary atmosphere (temperate)"
+    else:
+        return "Inferred: thin atmosphere or frozen volatiles (cold)"
+
+import sys
+import pandas as pd
+import numpy as np
+
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python add_habitability_score.py <input_csv> <output_csv>")
+        print("Usage: python habitability_v2.py <input_csv> <output_csv>")
         sys.exit(1)
 
-    input_path, output_path = sys.argv[1], sys.argv[2]
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
+
     df = pd.read_csv(input_path)
 
-    scores = []
-    classes = []
-    for _, row in df.iterrows():
-        score, _ = score_row(row)
-        scores.append(score)
-        classes.append(classify(score))
+    # Compute Earth Similarity Index (ESI)
+    
+    esi_values: pd.Series = df.apply(compute_esi, axis=1)
 
-    df["habitability_score"] = scores
-    df["habitability_class"] = classes
+    df["esi"] = esi_values
+    df["habitability_category"] = esi_values.apply(esi_to_category)
+
+    df["planet_type"] = df.apply(
+        lambda row: classify_planet_type(
+            row.get("pl_rade"),
+            row.get("pl_masse"),
+        ),
+        axis=1,
+    )
+
+    df["inferred_atmosphere"] = df.apply(
+        lambda row: infer_atmosphere(
+            row["planet_type"],
+            row.get("pl_eqt"),
+        ),
+        axis=1,
+    )
 
     df.to_csv(output_path, index=False)
 
-    print(f"Max possible score: {MAX_SCORE}")
-    print(f"Potentially Habitable cutoff: >= {POTENTIALLY_HABITABLE_CUTOFF}")
-    print(f"Possibly Habitable cutoff:    >= {POSSIBLY_HABITABLE_CUTOFF}")
-    print()
-    print("Summary:")
-    print(df["habitability_class"].value_counts().to_string())
+    print("\nHabitability category counts:")
+    print(df["habitability_category"].value_counts(dropna=False).to_string())
+
+    print("\nPlanet type counts:")
+    print(df["planet_type"].value_counts(dropna=False).to_string())
+
+    print("\nTop 10 by ESI:")
+
+    top = (
+        df.dropna(subset=["esi"])
+          .sort_values("esi", ascending=False)
+          .drop_duplicates(subset="pl_name")
+          .head(10)
+    )
+
+    print(
+        top[
+            [
+                "pl_name",
+                "esi",
+                "habitability_category",
+                "planet_type",
+                "inferred_atmosphere",
+            ]
+        ].to_string(index=False)
+    )
+
     print(f"\nSaved to: {output_path}")
 
 
